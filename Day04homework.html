@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta charset="UTF-8">
+		<title>登录系统</title>
+		<!-- 新 Bootstrap 核心 CSS 文件 -->
+<link href="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+ 
+<!-- jQuery文件。务必在bootstrap.min.js 之前引入 -->
+<script src="https://cdn.staticfile.org/jquery/2.1.1/jquery.min.js"></script>
+ 
+<!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+<script src="https://cdn.staticfile.org/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<style type="text/css">
+		#loginbc{
+			background-color: #1E9FFF;
+		}
+		#loginym{
+			width: 550px;
+			height: 530px;
+			background-color: white;
+			margin:0 auto;
+			margin-top: 100px;
+			padding-top: 80px;
+		}
+		#loginuser{
+			width: 426px;
+			height: 55px;
+			margin-left: -30px;
+			background-color: transparent;
+			padding-left: 31px;
+			border: 1px solid lightgray;
+		}
+		.loginpicture{
+			margin-left: 60px;
+		}
+		#loginpassword{
+			width: 426px;
+			height: 55px;
+			margin-top: 10px;
+			margin-left:-30px;
+			background-color: transparent;
+			padding-left: 31px;
+			border: 1px solid lightgray;
+		}
+		#denglu{
+			width: 426px;
+			height: 55px;
+			margin-left: 56px;
+			margin-top: 10px;
+			background-color: coral;
+			border-radius: 5px;
+			color: white;
+			border: 1px;
+		}
+		#weixin{
+			margin-left: 180px;
+			margin-right: 5px;
+		}
+		#weibo{
+			margin-right: 5px;
+		}
+		#dlp{
+			margin-top: 20px;
+		}
+		#nucp{
+			height: 50px;
+			margin-top: -55px;
+			margin-left: 200px;
+		}
+		#bottomDiv{
+			text-align: center;
+			margin-top: 20px;
+		}
+	</style>
+	</head>
+	<body id="loginbc">
+		<div id="loginym">
+			<img src="../Day04/imags/nuc.png" id="nucp"/>
+			<h1 class="text-center">毕业设计管理系统</h1>
+			<img src="images/user.png" class="loginpicture">
+			<input type="text" id="loginuser" placeholder="请输入用户名:"/>
+			<br>
+			<img src="images/password.png" class="loginpicture"/>
+			<input type="password" id="loginpassword" placeholder="请输入密码"/>
+			<br />
+			<div><button id="denglu">登&nbsp;&nbsp;录</button></div>
+			<div id="dlp">
+			<a href="https://open.weixin.qq.com/connect/qrconnect?appid=wx00eda80ff922f2b4&redirect_uri=http://extlogin.4399.com/weixin/callback.do&response_type=code&scope=snsapi_login&state=postLoginHandler%253Ddefault%2526redirectUrl%253D%2526appId%253Ddev4399%2526bizId%253D1199000587%2526gameId%253D%2526cid%253D%2526aid%253D%2526ref%253D%2526autoLogin%253Dtrue%2526adChannels%253D%2526crossDomainUrl%253D%2526regLevel%253D6%2526loginLevel%253D6#wechat_redirect"><img src="../Day04/imags/weixin.png" id="weixin"></a>
+		    <a href="https://api.weibo.com/oauth2/authorize?scope=email&state=68377a794e43524e43494a31346b6f65334c7956536831486a34474a69686742&redirect_uri=http%3A%2F%2Fwww.zhihu.com%2Foauth%2Fcallback%2Fsina&response_type=code&client_id=3063806388###"><img src="../Day04/imags/weibo.png" id="weibo"></a>
+		    <a href="https://graph.qq.com/oauth2.0/show?which=Login&display=pc&client_id=101019034&response_type=code&scope=get_info%2Cget_user_info&redirect_uri=https%3A%2F%2Fpassport.weibo.com%2Fothersitebind%2Fbind%3Fsite%3Dqq%26state%3DCODE-yf-1M3VB8-1RM247-FOOzx2DUgue8iSm8775cb%26bentry%3Dminiblog%26wl%3D&display="><img src="../Day04/imags/qq.png"></a>
+			</div>
+			<div id="bottomDiv">
+				开发者:刘坤 2013040642
+			</div>
+		</div>
+	</body>
+</html>
